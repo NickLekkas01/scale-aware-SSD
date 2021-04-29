@@ -54,7 +54,7 @@ python3 -m src.scripts.train -c src/configs/tod_config.json
 **CUDA Version:** 11.2
 **Python:** 3.8.5
 
-**Package                          Version**
+**Package  -  Version**
 -------------------------
 	1.  albumentations         0.5.2
 	2.  conda                  4.9.2

@@ -55,36 +55,36 @@ python3 -m src.scripts.train -c src/configs/tod_config.json
 **Python:** 3.8.5
 
 **Package                Version**
----------------------- -------------------
-1.  albumentations         0.5.2
-2.  conda                  4.9.2
-3.  detectron2             0.4+cu110
-4.  imageio                2.9.0
-5.  imageio-ffmpeg         0.4.3
-6.  imgaug                 0.4.0
-7.  ipython                7.19.0
-8.  matplotlib             3.4.1
-9.  moviepy                1.0.3
-10.  numpy                  1.20.2
-11.  opencv-python          4.5.1.48
-12.  pandas                 1.2.3
-13.  Pillow                 8.1.0
-14.  pip                    21.0.1
-15.  pycocotools            2.0.2
-16.  pytorch-lightning      1.2.6
-17.  PyYAML                 5.3.1
-18.  scikit-image           0.18.1
-19.  scikit-learn           0.22.2
-20.  scipy                  1.6.2
-21.  seaborn                0.11.1
-22.  simplejson             3.17.2
-23.  tensorboard            2.4.1
-24.  torch                  1.8.1+cu111
-25.  torchaudio             0.8.1
-26.  torchelastic           0.2.1
-27.  torchmetrics           0.2.0
-28.  torchvision            0.9.1+cu111
-29.  wheel                  0.35.1
+-------------------------
+	1.  albumentations         0.5.2
+	2.  conda                  4.9.2
+	3.  detectron2             0.4+cu110
+	4.  imageio                2.9.0
+	5.  imageio-ffmpeg         0.4.3
+	6.  imgaug                 0.4.0
+	7.  ipython                7.19.0
+	8.  matplotlib             3.4.1
+	9.  moviepy                1.0.3
+	10.  numpy                  1.20.2
+	11.  opencv-python          4.5.1.48
+	12.  pandas                 1.2.3
+	13.  Pillow                 8.1.0
+	14.  pip                    21.0.1
+	15.  pycocotools            2.0.2
+	16.  pytorch-lightning      1.2.6
+	17.  PyYAML                 5.3.1
+	18.  scikit-image           0.18.1
+	19.  scikit-learn           0.22.2
+	20.  scipy                  1.6.2
+	21.  seaborn                0.11.1
+	22.  simplejson             3.17.2
+	23.  tensorboard            2.4.1
+	24.  torch                  1.8.1+cu111
+	25.  torchaudio             0.8.1
+	26.  torchelastic           0.2.1
+	27.  torchmetrics           0.2.0
+	28.  torchvision            0.9.1+cu111
+	29.  wheel                  0.35.1
 
 **Dockerfile**
     

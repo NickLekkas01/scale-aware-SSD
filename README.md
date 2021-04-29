@@ -2,7 +2,7 @@
 
 Training goes as follows:
   1. Collect hyper parameters from configuration file
-        a. data parameters
+  		a. data parameters
           1. batch size
           2. train, test path
           3. val split percentage ( from training set )

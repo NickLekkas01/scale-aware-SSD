@@ -2,39 +2,39 @@
 
 Training goes as follows:
   1. Collect hyper parameters from configuration file
-  		a. data parameters
-          1. batch size
-          2. train, test path
-          3. val split percentage ( from training set )
-          4. input size
-          5. input format
-          6. transforms
-      b. learning parameters
-          1. class weights
-          2. detection 
-              a. bbox and cls lamda
-              b. loss function
-              c. minibatch size
-              d. samples choice ( dns, base ) 
-          3. optimizer
-              a. learning rate
-              b. step
-              c. epochs learning rate change
-              d. wd lamda
-      c. model parameters
-          1. anchors ( aspects & scales )
-          2. model type ( custom ssd )
-          3. #classes 
-      d. training parameters
-          1. #epochs
+        1. data parameters
+                1. batch size
+                2. train, test path
+                3. val split percentage ( from training set )
+                4. input size
+                5. input format
+                6. transforms
+        2. learning parameters
+                1. class weights
+                2. detection 
+                        1. bbox and cls lamda
+                        2. loss function
+                        3. minibatch size
+                        4. samples choice ( dns, base ) 
+        3. optimizer
+                1. learning rate
+                2. step
+                3. epochs learning rate change
+                4. wd lamda
+        3. model parameters
+                1. anchors ( aspects & scales )
+                2. model type ( custom ssd )
+                3. #classes 
+        4. training parameters
+                1. #epochs
   2. Create SSD model
-      a. Generate Feauture Maps
-      b. Initialize model
-      c. Inialize bbox encoder
-      d. Inialize bbox decoder
-      e. Inialize bbox nms
+        1. Generate Feauture Maps
+        2. Initialize model
+        3. Inialize bbox encoder
+        4. Inialize bbox decoder
+        5. Inialize bbox nms
   3. Apply bounding box encoder. 
-      a. Resize bounding boxes to model's required shape.
+        1. Resize bounding boxes to model's required shape.
   4. Initialize Loss Detection Object 
   5. Initialize Detection Engine
   6. Initialize Pytorch Lighting 

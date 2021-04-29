@@ -47,7 +47,7 @@ Training goes as follows:
 
 **Run:**
 -------------------------
-python3 -m src.scripts.train -c src/configs/tod_config.json
+python3 -m src.scripts.train -c src/configs/train_config.json
 
 **NVIDIA-SMI:** 460.39       
 **Driver Version:** 460.39       

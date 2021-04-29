@@ -2,50 +2,52 @@
 
 Training goes as follows:
 -------------------------
-		1. Collect hyper parameters from configuration file
-				1. data parameters
-						1. batch size
-						2. train, test path
-						3. val split percentage ( from training set )
-						4. input size
-						5. input format
-						6. transforms
-				2. learning parameters
-						1. class weights
-						2. detection 
-								1. bbox and cls lamda
-								2. loss function
-								3. minibatch size
-								4. sampler choice ( dns, base ) 
-						3. optimizer
-								1. learning rate
-								2. step
-								3. epochs learning rate change
-								4. wd lamda
-						4. model parameters
-								1. anchors ( aspects & scales )
-								2. model type ( custom ssd )
-								3. #classes 
-						5. training parameters
-								1. #epochs
-		2. Create SSD model
-				1. Generate Feauture Maps
-				2. Initialize model
-				3. Inialize bbox encoder
-				4. Inialize bbox decoder
-				5. Inialize bbox nms
-		3. Apply bounding box encoder. 
-				1. Resize bounding boxes to model's required shape.
-		4. Initialize Loss Detection Object 
-		5. Initialize Detection Engine
-		6. Initialize Pytorch Lighting 
-		7. Initialize Trainer Object
-		8. Initialize Data Module
-		9. Start Training with Training set
-		10. Test Model wih Test set
-		11. Run Coco Evaluator to acquire metrics
+	1. Collect hyper parameters from configuration file
+			1. data parameters
+					1. batch size
+					2. train, test path
+					3. val split percentage ( from training set )
+					4. input size
+					5. input format
+					6. transforms
+			2. learning parameters
+					1. class weights
+					2. detection 
+							1. bbox and cls lamda
+							2. loss function
+							3. minibatch size
+							4. sampler choice ( dns, base ) 
+					3. optimizer
+							1. learning rate
+							2. step
+							3. epochs learning rate change
+							4. wd lamda
+					4. model parameters
+							1. anchors ( aspects & scales )
+							2. model type ( custom ssd )
+							3. #classes 
+					5. training parameters
+							1. #epochs
+	2. Create SSD model
+			1. Generate Feauture Maps
+			2. Initialize model
+			3. Inialize bbox encoder
+			4. Inialize bbox decoder
+			5. Inialize bbox nms
+	3. Apply bounding box encoder. 
+			1. Resize bounding boxes to model's required shape.
+	4. Initialize Loss Detection Object 
+	5. Initialize Detection Engine
+	6. Initialize Pytorch Lighting 
+	7. Initialize Trainer Object
+	8. Initialize Data Module
+	9. Start Training with Training set
+	10. Test Model wih Test set
+	11. Run Coco Evaluator to acquire metrics
 
-**Run:** python3 -m src.scripts.train -c src/configs/tod_config.json
+**Run:**
+-------------------------
+python3 -m src.scripts.train -c src/configs/tod_config.json
 
 **NVIDIA-SMI:** 460.39       
 **Driver Version:** 460.39       

@@ -1,6 +1,7 @@
 # scale-aware-SSD
 
 Training goes as follows:
+-------------------------
 		1. Collect hyper parameters from configuration file
 				1. data parameters
 						1. batch size
